@@ -183,7 +183,7 @@ footer a {
 <body>
 
 <header>
-  <h1>Nyrion</h1>
+  <h1>Syntrax</h1>
   <nav style="display:flex;justify-content:center;gap:2rem;margin:1rem 0;">
     <a href="index.html">Home</a>
     <a href="releases.html">Releases</a>
@@ -191,13 +191,13 @@ footer a {
 </header>
 
 <section class="hero">
-  <h1>Welcome to Nyrion</h1>
-  <p>The only CLI's build for the user.</p>
+  <h1>Welcome to Syntrax</h1>
+  <p>Making your world better and simpler with Syntrax.</p>
   <button onclick="window.location.href='releases.html'">View Releases</button>
 </section>
 
 <section class="latest-release" id="latestRelease">
-  <h2>Latest Nyrion Release</h2>
+  <h2>Latest Syntrax Release</h2>
   <p>Loading latest release...</p>
 </section>
 
@@ -207,7 +207,7 @@ footer a {
 
 <footer>
   <h3>About Me</h3>
-  <p>Check out my GitHub profile: <a href="https://github.com/PingunixDevelopments" target="_blank">PingunixDevelopments</a></p>
+  <p>Check out my GitHub profile: <a href="https://github.com/SyntraxTech" target="_blank">PingunixDevelopments</a></p>
 </footer>
 
 <script>
@@ -215,7 +215,7 @@ footer a {
 const latestReleaseContainer = document.getElementById('latestRelease');
 async function fetchLatestRelease() {
   try {
-    const res = await fetch('https://api.github.com/repos/PingunixDevelopments/Nyrion/releases');
+    const res = await fetch('https://api.github.com/repos/SyntraxTech/Syntrax/releases');
     const releases = await res.json();
     if (Array.isArray(releases) && releases.length > 0) {
       const latest = releases[0];
